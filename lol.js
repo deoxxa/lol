@@ -33,6 +33,6 @@ var lols = Object.keys(exclamations).map(function(e) {
 var length = lols.length;
 
 module.exports = function lol() {
-    var i = parseInt(Math.random()*length, 10);
-    return exclamations[i];
+    var i = Math.floor(Math.random() * length, 10);
+    return lols[i];
 };
